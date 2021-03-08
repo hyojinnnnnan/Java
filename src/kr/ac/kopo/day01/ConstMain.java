@@ -21,6 +21,9 @@ public class ConstMain {
 		
 		System.out.println(bool);
 		System.out.println(BOOL);
+		
+		System.out.println('A'+'B'); //츨력값 : 131
+		System.out.println("A"+"B"); //출력값 : AB
 
 	}
 
