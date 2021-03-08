@@ -16,14 +16,14 @@ public class ConstMain {
 		boolean bool = false;
 		bool = true;
 		
-		//line 15, 16처럼 변수의 값이 변하는 것이 아니라 고정시키려면? : 상수변수 (final)
+		//line 16, 17처럼 변수의 값이 변하는 것이 아니라 고정시키려면? : 상수변수 (final)
 		final boolean BOOL = false; //상수변수명은 대문자로 작성
 		
 		System.out.println(bool);
 		System.out.println(BOOL);
 		
-		System.out.println('A'+'B'); //츨력값 : 131
-		System.out.println("A"+"B"); //출력값 : AB
+		System.out.println('A'+'B'); //131
+		System.out.println("A"+"B"); //AB
 
 	}
 
