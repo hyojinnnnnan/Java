@@ -112,9 +112,13 @@ public class HomeworkMarch09 {
 		/*
 		 * [교수님 피드백]
 		 * 효진씨 과제하시느라 고생하셨습니다
+		 * 
 		 * 1번문제 형변환은 float보다는 double을 사용하시는게 좋습니다 ^^
 		 * 그리고 소수점 둘째자리까지 출력하실 경우 Stirng.format()도 좋구요... 하지만 JDK5이상이면 그냥 printf()로 사용하셔도 될거 같아요
+		 * 
 		 * 4번문제에서 int remainder = q4num1%q4num2; 이 코드로만 만들어 놓으면 q4num2에 0 입력시 예외가 발생하지 않나요????
+		 * 에러 메세지
+		 * 	- Exception in thread "main" java.lang.ArithmeticException: / by zero
 		 */
 		
 	}
