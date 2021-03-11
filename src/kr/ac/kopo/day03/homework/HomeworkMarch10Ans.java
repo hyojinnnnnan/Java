@@ -6,6 +6,7 @@ public class HomeworkMarch10Ans {
 
 	public static void main(String[] args) {
 		/*
+		 * https://github.com/jiyooLee/2021_kopo_java/blob/master/java/src/kr/ac/kopo/day04/exam/ExamMaIn02.java
 		 * 문제1. 다이아몬드 찍기 (9행 9열) 
 		 * 1행 : - 4개, * 1개 
 		 * 2행 : - 3개, * 3개 
@@ -75,6 +76,7 @@ public class HomeworkMarch10Ans {
 
 		/*
 		 * 문제2. 나비넥타이 찍기
+		 * https://github.com/jiyooLee/2021_kopo_java/blob/master/java/src/kr/ac/kopo/day04/exam/ExamMain03.java
 		 */
 
 		// 교수님 코드분석
