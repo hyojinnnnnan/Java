@@ -12,7 +12,7 @@ public class HomeworkMarch10 {
 				System.out.print(i+j+1);
 			}
 			System.out.println(); //다음 행으로 이동
-		} //1번 끝
+		} //끝
 		
 		System.out.print("=========\n");
 		
@@ -28,7 +28,7 @@ public class HomeworkMarch10 {
 				 */
 			}
 			System.out.println();
-		} //2번 : 방법1 끝
+		} //끝
 		
 		System.out.print("=========\n");
 		
@@ -44,7 +44,7 @@ public class HomeworkMarch10 {
 				 */
 			}
 			System.out.println();
-		} //2번 : 방법2 끝
+		} //끝
 		
 		System.out.print("=========\n");
 		
@@ -61,7 +61,7 @@ public class HomeworkMarch10 {
 				 */
 			}
 			System.out.println();
-		} //3번 끝
+		} //끝
 		
 		System.out.print("=========\n");
 		
@@ -86,7 +86,7 @@ public class HomeworkMarch10 {
 				 */
 			}
 			System.out.println();
-		} //3번 : 응용1 끝
+		} //끝
 		
 		System.out.print("=========\n");
 		
@@ -109,7 +109,7 @@ public class HomeworkMarch10 {
 				 */
 			}
 			System.out.println();
-		} //3번 : 응용2 끝
+		} //끝
 		
 		System.out.print("=========\n");
 		
@@ -139,69 +139,9 @@ public class HomeworkMarch10 {
 					}
 				}
 			System.out.println();
-		} //4번 : for 3 + if 1 끝
+		} //끝
 		
-		//4번 ; for 2 + if 1 방식으로도 풀어보기 :)
-		
-		System.out.print("=========\n");
-		
-		//5번 : for 5 + if 1 :)
-		for (int a = 0; a < 9; a++) { // [a] 0 1 2 3 4 5 6 7 8
-			if (a < 5) { // [a] 0 1 2 3 4
-				for (int b = 0; b < a; b++) { // [공백] 0 1 2 3 4
-					System.out.print("^");
-				}
-				for (int c = 0; c < 5 - a; c++) { // [*] 5 4 3 2 1
-					System.out.print("*");
-				}
-			} else { // [a] 5 6 7 8 , 공백감소
-				for (int b = 0; b < 8 - a; b++) { // [공백] 3 2 1 0
-					System.out.print("^");
-				}
-				for (int c = 0; c < a - 3; c++) { // [*] 2 3 4 5
-					System.out.print("*");
-				}
-			}
-			System.out.println();
-		} //5번 : for 5 + if 1 끝
-		
-		//5번 : for 3 + if 2, for 3 + if+1, for 2 + if 2 방식으로도 풀어보기 :)
-		
-		System.out.print("=========\n");
-		
-		//6번 : 방법1 :)
-		for (int a = 0; a < 5; a++) { // [a] 0 1 2 3 4
-			for (int b = 0; b < a; b++) { 
-				System.out.print("^");
-			}
-			for (int c = 0 ; c < 5-a ; c++) { 
-				System.out.print("*");
-			}
-			for (int c = 0 ; c < 4-a ; c++) { 
-				System.out.print("*");
-			}
-			for (int b = 0; b < a; b++) { 
-				System.out.print("^");
-			}
-			System.out.println();
-		} //6번 : 방법1 끝
-		
-		System.out.print("=========\n");
-		
-		//6번 : 방법2 :)
-		for (int a = 0; a < 5; a++) { // [a] 0 1 2 3 4
-			for (int b = 0; b < a; b++) { 
-				System.out.print("^");
-			}
-			for (int c = 0 ; c < 9-(a*2) ; c++) { 
-				// a가 0일 때 c는 9번 반복, a가 1일 때 c는 7번 반복, a가 2일 때 c는 5번 반복 ...  a가 4일 때 c는 1번 반복 
-				System.out.print("*");
-			}
-			for (int b = 0; b < a; b++) { 
-				System.out.print("^");
-			}
-			System.out.println();
-		} //6번 : 방법2 끝
+		//for 2 + if 1 방식으로도 풀어보기 :)
 		
 	} //메인 메소드 끝
 
