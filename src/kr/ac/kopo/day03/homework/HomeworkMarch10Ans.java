@@ -1,13 +1,11 @@
 package kr.ac.kopo.day03.homework;
 
 public class HomeworkMarch10Ans {
-	// 스터디 겸용 :
-	// https://www.notion.so/hyojinan/_3-12-bb02a9e3b568435b942974185671fb5a
-
-	public static void main(String[] args) {
-		/*
-		 * https://github.com/jiyooLee/2021_kopo_java/blob/master/java/src/kr/ac/kopo/day04/exam/ExamMaIn02.java
-		 * 문제1. 다이아몬드 찍기 (9행 9열) 
+	// 스터디 겸용 : https://www.notion.so/hyojinan/_3-12-bb02a9e3b568435b942974185671fb5a
+	// 교수님 코드 : https://github.com/jiyooLee/2021_kopo_java/blob/master/java/src/kr/ac/kopo/day04/exam/ExamMaIn02.java
+	
+	public static void main(String[] args) {	
+		 /* 문제1. 다이아몬드 찍기 (9행 9열) 
 		 * 1행 : - 4개, * 1개 
 		 * 2행 : - 3개, * 3개 
 		 * 3행 : - 2개, * 5개 
@@ -70,10 +68,12 @@ public class HomeworkMarch10Ans {
 			System.out.println(); // 다음 행으로!
 		}
 
-		// 교수님 코드분석_version2 : - 기준
-
 		System.out.print("============\n");
-
+		
+		// 교수님 코드분석_version2 : - 기준
+		
+		
+		
 		/*
 		 * 문제2. 나비넥타이 찍기
 		 * https://github.com/jiyooLee/2021_kopo_java/blob/master/java/src/kr/ac/kopo/day04/exam/ExamMain03.java
