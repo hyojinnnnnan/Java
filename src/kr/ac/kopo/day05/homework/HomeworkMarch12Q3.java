@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class HomeworkMarch12Q3 {
 
 	public static void main(String[] args) {
-		// 3번
+		// 3번 (3월 11일 5번 문제)
 		// 소수 : 1과 자기자신 외에는 약수를 가지지 않는 1보다 큰 자연수
 		int[] primeNum = new int[99];
 		int index = 0;

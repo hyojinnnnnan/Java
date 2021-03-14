@@ -36,7 +36,7 @@ public class HomeworkMarch11Ans {
 		
 		int q2num = r.nextInt(100)+1; 
 		/* 
-		line 35를 분리해서 살펴보면
+		line 37를 분리해서 살펴보면
 		int q2num=r.nextInt(100); //0~99
 		q2num += 1; //1~100
 		*/
