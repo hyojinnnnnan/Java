@@ -22,7 +22,8 @@ public class HomeworkMarch12Q2Ans {
 			int num=sc.nextInt(); 
 			
 			if(num%2==0 && evenIdx<evenNum) { //짝수일 때
-				nums[evenIdx++]=num; //후위증가
+				nums[evenIdx]=num; //후위증가
+				evenIdx+=1;
 			}else if(num%2!=0 && oddIdx>=evenNum){ //홀수일 때
 				nums[oddIdx--]=num; //후위감소
 			}else {
@@ -31,8 +32,8 @@ public class HomeworkMarch12Q2Ans {
 			
 		}
 		System.out.printf("<총 %d개 정수 출력> \n",nums.length);
-		for(int num:nums) {
-			System.out.print(num+ " ");
+		for(int repeat:nums) {
+			System.out.print(repeat+ " ");
 		}
 	}
 

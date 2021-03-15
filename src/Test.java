@@ -1,12 +1,11 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class Test {
 
 	public static void main(String[] args) {
-		int max=4;
-		int min=2;
-		int num=new Random().nextInt((max - min) + 1) + min;
-		System.out.println(num);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("짝수 몇개 입력 : ");
+		
+		System.out.println("홀수 몇개 입력 : ");
 	}
 }
