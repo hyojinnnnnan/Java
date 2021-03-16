@@ -7,6 +7,7 @@ public class IcecreamMain {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("아이스크림 몇 개 구입할꺼야? : ");
 		int num=sc.nextInt();
+		System.out.println();
 		
 		Icecream[] iceArr=new Icecream[num];
 		for(int i=0 ; i<iceArr.length ; i++) {
@@ -16,6 +17,7 @@ public class IcecreamMain {
 			iceArr[i].name = sc.next();
 			System.out.print("가격 : ");
 			iceArr[i].price = sc.nextInt();
+			System.out.println();
 		}
 		int totalPrice=0;
 		System.out.printf("<총 %d개의 아이스크림 구매정보 출력>\n",num);
