@@ -2,12 +2,6 @@ package kr.ac.kopo.day07.homework;
 
 import java.util.Scanner;
 
-/**
- * Icecream2Ans, IcecreamMain2Ans 클래스에서 사용되는 기능클래스로
- * 
- * @author Hyojin An
- *
- */
 public class IcecreamMarket {
 	
 	Scanner sc=new Scanner(System.in);
