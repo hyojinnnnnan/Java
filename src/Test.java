@@ -1,11 +1,7 @@
-import java.util.Scanner;
-
 public class Test {
-
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("짝수 몇개 입력 : ");
+	
+	public static void main(String[] args) { //static 메소드 영역
 		
-		System.out.println("홀수 몇개 입력 : ");
+		
 	}
 }
