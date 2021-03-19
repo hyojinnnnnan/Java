@@ -165,15 +165,15 @@ public class StringUtil { //최대한 java가 제공하는 기본 메소드를 �
 	 * 문자열을 입력받아 소문자로 변경하는 toLowerString( String str ) 메소드
 	 * @param str 소문자로 변경하고 싶은 문자열
 	 */
-	public void  toLowerString( String str ) {
+	protected String toLowerString( String str ) {
 		char[] charArr=this.strToCharArr(str);
 		for(int i=0 ; i<charArr.length ; i++) {
 			if(this.isUpperChar(charArr[i])) { //대문자면
 				charArr[i]=(char)((int)charArr[i]+32); //대문자에서 32를 더하면 소문자
 			}
 		}
-		System.out.println(Arrays.toString(charArr)); 
-		//System.out.println(new String(charArr));
+		//System.out.println(Arrays.toString(charArr)); 
+		return new String(charArr);
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
