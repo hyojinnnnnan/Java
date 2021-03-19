@@ -89,7 +89,7 @@ public class StringUtil { //최대한 java가 제공하는 기본 메소드를 �
 	}
 	
 	/**
-	 * 두개의 숫자를 입력받아 큰수를 반환하는 max( int i, int j) 메소드
+	 * 두개의 숫자를 입력받아 큰수를 반환하는 max(int i, int j) 메소드
 	 * @param i 숫자1
 	 * @param j 숫자2
 	 */
@@ -150,14 +150,15 @@ public class StringUtil { //최대한 java가 제공하는 기본 메소드를 �
 	 * 문자열을 입력받아 대문자로 변경하는 toUpperString( String str ) 메소드
 	 * @param str 대문자로 변경하고 싶은 문자열
 	 */
-	public void  toUpperString( String str ) {
-		char[] charArr=this.strToCharArr(str);
+	public String  toUpperString( String str ) {
+		char[] charArr=this.strToCharArr(str); //str.getChars(0, str.length(), charArr, 0);
 		for(int i=0 ; i<str.length() ; i++) {
 			if(this.isLowerChar(charArr[i])) { //소문자면
-				charArr[i]=(char) ((int)charArr[i]-32); //소문자에서 32를 빼면 대문자
+				charArr[i]=(char)((int)charArr[i]-32); //소문자에서 32를 빼면 대문자
 			}
 		}
-		System.out.println(Arrays.toString(charArr));
+		//System.out.println(Arrays.toString(charArr));
+		return new String(charArr);
 	}
 	
 	/**
@@ -168,10 +169,11 @@ public class StringUtil { //최대한 java가 제공하는 기본 메소드를 �
 		char[] charArr=this.strToCharArr(str);
 		for(int i=0 ; i<charArr.length ; i++) {
 			if(this.isUpperChar(charArr[i])) { //대문자면
-				charArr[i]=(char) ((int)charArr[i]+32); //대문자에서 32를 더하면 소문자
+				charArr[i]=(char)((int)charArr[i]+32); //대문자에서 32를 더하면 소문자
 			}
 		}
-		System.out.println(Arrays.toString(charArr));
+		System.out.println(Arrays.toString(charArr)); 
+		//System.out.println(new String(charArr));
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -209,7 +211,7 @@ public class StringUtil { //최대한 java가 제공하는 기본 메소드를 �
 	/**6번 문제 : 문자열을 입력받아 대문자로 변경*/
 	public void q6() {
 		sentence=this.inputStr("대문자로 바꾸고 싶은 문자열을 입력하세요 : ");
-		this.toUpperString(sentence);
+		System.out.println(this.toUpperString(sentence));
 	}
 	
 	/**7번 문제 : 문자열을 입력받아 소문자로 변경*/
