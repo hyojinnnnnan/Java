@@ -68,21 +68,6 @@ public class HomeworkMarch10Ans {
 			System.out.println(); // 다음 행으로!
 		}
 
-		System.out.print("============\n");
-		
-		// 교수님 코드분석_version2 : - 기준
-		
-		
-		
-		/*
-		 * 문제2. 나비넥타이 찍기
-		 * https://github.com/jiyooLee/2021_kopo_java/blob/master/java/src/kr/ac/kopo/day04/exam/ExamMain03.java
-		 */
-
-		// 교수님 코드분석
-
-		// 내 코드
-
 	}
 
 }
