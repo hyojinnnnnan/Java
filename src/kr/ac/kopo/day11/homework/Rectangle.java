@@ -1,4 +1,4 @@
-package kr.ac.kopo.day10.homework.Q2.version3;
+package kr.ac.kopo.day11.homework;
 
 public class Rectangle extends Figure{
 	
