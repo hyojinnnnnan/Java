@@ -1,4 +1,4 @@
-package kr.ac.kopo.day10.homework.Q2.version3;
+package kr.ac.kopo.day10.homework.Q2.version4;
 
 import java.util.Scanner;
 
@@ -14,22 +14,18 @@ public class Main {
 		case 1:
 			Rectangle r = new Rectangle();
 			r.calArea();
-			r.printInfo();
 			break;
 		case 2:
 			Square s = new Square();
 			s.calArea();
-			s.printInfo();
 			break;
 		case 3:
 			Triangle t = new Triangle();
 			t.calArea();
-			t.printInfo();
 			break;
 		case 4:
 			Circle c = new Circle();
 			c.calArea();
-			c.printInfo();
 			break;
 		}
 	}

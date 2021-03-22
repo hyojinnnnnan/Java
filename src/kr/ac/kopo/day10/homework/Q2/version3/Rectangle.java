@@ -3,15 +3,16 @@ package kr.ac.kopo.day10.homework.Q2.version3;
 public class Rectangle extends Figure{
 	
 	Rectangle(){
-		super.setWH("Rectangle");
+		super.setWidth();
+		super.setHeight();
+		super.setFigureName("Rectangle");
 	}
 	
 	@Override
 	public void calArea() {
-		int w=super.getW();
-		int h=super.getH();
+		int w=super.getWidth();
+		int h=super.getHeight();
 		super.setArea(w*h);
-		super.calArea();
 	}
 
 }
