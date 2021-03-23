@@ -20,7 +20,7 @@ public class ExceptionMain01 {
 			
 			System.out.println(str.charAt(0)); 
 			//NullPointerException 에러가 발생하는 구문
-			//catch로 해당 오류 안 잡아주면 위에서 ArithmeticException 에러가 발생해서 해당 catch구문으로 넘어가면서 이 구문은 수행 안됨
+			//이미 위에서 ArithmeticException 에러가 발생해서 해당 catch구문으로 넘어가면서 이 구문은 수행 안됨
 			
 		}catch(ArithmeticException ae) { 
 			System.out.println("===ArithmeticException 발생===");
