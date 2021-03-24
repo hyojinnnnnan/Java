@@ -8,9 +8,9 @@ public class CalendarMain {
 		
 		Calendar c = Calendar.getInstance(); //static 메소드 접근방식 : 클래스명.메소드명
 		System.out.println(c);
-		/* Calendar 클래스와 getInstance 메소드는 다음과 같은구성을 가질 것
+		/* Calendar 클래스(->추상 클래스)와 getInstance 메소드는 다음과 같은구성을 가질 것
 		abstract class Calendar{
-			static Calendar getInstrance() {
+			static Calendar getInstrance() { //추상클래스는 구현된 일반 메소드도 가질 수 있음 (인터페이스와의 차이점)
 				return new GregorianCalendar();
 			}
 		}
