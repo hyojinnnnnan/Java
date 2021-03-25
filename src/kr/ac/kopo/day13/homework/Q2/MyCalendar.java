@@ -3,16 +3,9 @@ package kr.ac.kopo.day13.homework.Q2;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class MyCalendar { //복습겸 2차원 배열을 써서 깔끔하게 출력해보자
+public class MyCalendar { 
 
 	Calendar c = Calendar.getInstance();
-
-	public int inputInt(String msg) { // 사용자가 원하는 숫자 입력
-		Scanner sc = new Scanner(System.in);
-		System.out.print(msg);
-		int num = sc.nextInt();
-		return num;
-	}
 
 	public void makeCalendar(int userInputYear) { // 원하는 연도의 1월부터 12월까지 달력출력
 		for (int repeatMonth = 0; repeatMonth <= 11; repeatMonth++) { // 월별 반복 : 0(1월)~11(12월)
@@ -34,24 +27,24 @@ public class MyCalendar { //복습겸 2차원 배열을 써서 깔끔하게 출�
 		printCalendar(userInputYear, userInputMonth, monthCalendar);
 	}
 
-	public void printCalendar(int userInputYear, int userInputMonth, int[][] monthCalendar) { // 달력 출력
+	private void printCalendar(int userInputYear, int userInputMonth, int[][] monthCalendar) { // 달력 출력
 		System.out.println("<<" + userInputYear + "년 " + userInputMonth + "월 >>");
-		System.out.println("일\t\t월\t\t화\t\t수\t\t목\t\t금\t\t토");
+		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		
 		for (int i = 0; i < monthCalendar.length; i++) {
 			for (int num : monthCalendar[i]) {
 				if (num == 0) {
-					System.out.print(" " + "\t\t");
+					System.out.print(" " + "\t");
 				} else {
-					System.out.print(num + "\t\t");
+					System.out.print(num + "\t");
 				}
 			}
 			System.out.println();
 		}
 	}
 
-	public int[][] inputNumToCalendar() { // 월별 날짜 채우기
-		int day = c.get(Calendar.DAY_OF_WEEK); // 월별 1일은 무슨요일? (일요일(1) ~ 토요일(7))
+	private int[][] inputNumToCalendar() { // 월별 날짜 채우기
+		int day = c.get(Calendar.DAY_OF_WEEK); //일요일(1) ~ 토요일(7)
 		int lastDay = c.getActualMaximum(Calendar.DAY_OF_MONTH); // 해당 월의 마지막 날은 몇일?
 		int oneDay = 1; // 1일, 2일, 3일, ... 해당 월의 마지막 날
 

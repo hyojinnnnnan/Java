@@ -26,6 +26,7 @@ public class CalendarMain {
 		//2021년 5월 5일은 무슨요일?
 		c.set(2021, 4, 5);
 		day=c.get(Calendar.DAY_OF_WEEK);
+		System.out.println(day);
 		System.out.println("2021년 5월 5일 "+dayArr[day]+"요일");
 		
 		//2021년 5월의 마지막 날은 몇일?
