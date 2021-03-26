@@ -53,7 +53,7 @@ public class GenericMain {
 		a02.info();
 		
 		//System.out.println("길이 : "+a01.getObj().length()); 
-		//a01.getObj()는 Object형이기 때문에 String 클래스 메소드인 .length()에서 오류발생
+		//a01.getObj()는 Object형이기 때문에 String 클래스 메소드인 .length()에서 오류발생 : The method length() is undefined for the type Object
 		System.out.println("길이 : "+((String)a01.getObj()).length()); //명시적 형변환 
 		
 		//System.out.println("길이 : "+((String)a02.getObj()).length());

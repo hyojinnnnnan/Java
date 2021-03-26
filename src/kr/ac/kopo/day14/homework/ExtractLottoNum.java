@@ -15,8 +15,9 @@ public class ExtractLottoNum {
 	/** ArrayList를 이용한 알고리즘 */
 	protected void extract1() {
 		List<String> list = new ArrayList<>(); // 리스트 생성
+		//int형을 갖는 List를 갖고 싶으면? List<Integer> list = new ArrayList<>(); -> 이렇게 쓰면 밑에 로직 수정해야 함
 		while (true) { // 무한반복 (종료조건 line 17)
-			String num = Integer.toString(r.nextInt(45) + 1); // 1~45 사이의 랜덤숫자 추출해서 String형으로 강제 형변환
+			String num = Integer.toString(r.nextInt(45) + 1); // 1~45 사이의 랜덤숫자 추출해서 String형으로 변환 -> Generic은 참조 자료형만 타입으로 사용이 가능하기 때문에 : Dimension to complete Reference Type
 			// POINT. 리스트는 중복을 허용하기 때문에 if조건을 통한 중복제거 과정이 필요
 			if (!list.contains(num)) // 만약 리스트에 동일한 데이터가 없으면
 				list.add(num); // 리스트에 추가
@@ -70,11 +71,6 @@ public class ExtractLottoNum {
 		for (String str : set)
 			System.out.print(str + "  ");
 		System.out.println();
-		/*
-		 * line 69 -> 출력방법 2 
-		 * Object[] objArr =set.toArray();
-		 * System.out.println(Arrays.toString(objArr));
-		 */
 	}
 
 	/** TreeSet을 이용한 알고리즘 */

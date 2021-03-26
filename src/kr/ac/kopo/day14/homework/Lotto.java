@@ -2,7 +2,7 @@ package kr.ac.kopo.day14.homework;
 
 import java.util.Scanner;
 
-public class Lotto extends ExtractLottoNum2{
+public class Lotto extends ExtractLottoNum{
 	
 	public void play() {
 		Scanner sc=new Scanner(System.in);
