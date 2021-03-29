@@ -56,7 +56,7 @@ public class ListMain {
 		
 		//방법3 - 리스트에서 이 경우는 거의 사용하지 않음 
 		System.out.println("<toArray()을 이용한 리스트 전체 데이터 출력>");
-		//String[] arr = list.toArray(); 에러 -> Type mismatch: cannot convert from Object[] to String[]
+		//String[] arr = list.toArray(); //에러 -> Type mismatch: cannot convert from Object[] to String[]
 		Object[] arr = list.toArray();
 		System.out.println(Arrays.toString(arr));
 		System.out.println();
