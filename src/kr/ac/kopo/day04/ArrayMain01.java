@@ -14,14 +14,19 @@ public class ArrayMain01 {
 		
 		System.out.print("====================\n");
 		
+		/*
 		for(int i=0 ; i<arr.length ; i++) { //마지막 인덱스 번호 = 배열의 크기-1
 			System.out.println((i+1)+"번째 정수 "+"arr["+i+"] : "+arr[i]); 
 			//new 키워드를 통해 heap에 만들어진 영역은 초기화 없이도 디폴트 값으로 자동 초기화
 		}
+		*/
+		for(int i : arr) {
+			System.out.println(i);
+		}
 		
 		System.out.print("====================\n");
 		
-		arr=new int[3]; //line 9에서 heap 영역에 만들어진 공간을 쓰는 것이 아니라, 새로운 공간을 생성 
+		arr=new int[3]; //line 11에서 heap 영역에 만들어진 공간을 쓰는 것이 아니라, 새로운 공간을 생성 
 		for(int i=0 ; i<arr.length ; i++) { //마지막 인덱스 번호 = 배열의 크기-1
 			System.out.println((i+1)+"번째 정수 "+"arr["+i+"] : "+arr[i]); 
 			//new 키워드를 통해 heap에 만들어진 영역은 초기화 없이도 디폴트 값으로 자동 초기화
